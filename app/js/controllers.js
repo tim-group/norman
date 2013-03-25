@@ -2,9 +2,9 @@
 
 /* Controllers */
 
-function PhoneListCtrl($scope, $http) {
+function ReportListCtrl($scope, $http) {
   $http.get('data/reports_latest.json').success(function(data) {
-    $scope.phones = data;
+    $scope.reports = data;
   });
 
   $scope.orderProp = 'age';
@@ -13,8 +13,8 @@ function PhoneListCtrl($scope, $http) {
 //PhoneListCtrl.$inject = ['$scope', '$http'];
 
 
-function PhoneDetailCtrl($scope, $routeParams) {
-  $scope.phoneId = $routeParams.phoneId;
+function ReportDetailCtrl($scope, $routeParams) {
+  $scope.uuid = $routeParams.uuid;
 }
 
 //PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
