@@ -13,8 +13,11 @@ function ReportListCtrl($scope, $http) {
 //ReportListCtrl.$inject = ['$scope', '$http'];
 
 
-function ReportDetailCtrl($scope, $routeParams) {
+function ReportDetailCtrl($scope, $routeParams, $http) {
   $scope.uuid = $routeParams.uuid;
+  $http.get('data/' + $routeParams.uuid + '.json').success(function(data) {
+      $scope.report = data;
+  });
 }
 
-//ReportDetailCtrl.$inject = ['$scope', '$routeParams'];
+//ReportDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];

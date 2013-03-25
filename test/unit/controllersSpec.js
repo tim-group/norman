@@ -32,5 +32,25 @@ describe('PhoneCat controllers', function() {
 
 
   describe('ReportDetailCtrl', function(){
+      var scope, ctrl, $httpBackend;
+
+      var report = {uuid: 'FOO1', 'fields': { 'logs': [ 'line1', 'line2' ]} };
+
+      beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
+        $httpBackend = _$httpBackend_;
+        $httpBackend.expectGET('data/AAAAA-BBBBB-CCCCC-DDDDD-EEEEE.json').
+            respond(report);
+
+        $routeParams.uuid = 'AAAAA-BBBBB-CCCCC-DDDDD-EEEEE'
+
+        scope = $rootScope.$new();
+        ctrl = $controller(ReportDetailCtrl, {$scope: scope});
+      }));
+
+      it('should create "report" model with log lines in fields', function() {
+          expect(scope.report).toBeUndefined();
+          $httpBackend.flush();
+          expect(scope.report).toEqual(report);
+      })
   });
 });
