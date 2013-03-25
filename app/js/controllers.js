@@ -10,11 +10,11 @@ function ReportListCtrl($scope, $http) {
   $scope.orderProp = 'age';
 }
 
-//PhoneListCtrl.$inject = ['$scope', '$http'];
+//ReportListCtrl.$inject = ['$scope', '$http'];
 
 
 function ReportDetailCtrl($scope, $routeParams) {
   $scope.uuid = $routeParams.uuid;
 }
 
-//PhoneDetailCtrl.$inject = ['$scope', '$routeParams'];
+//ReportDetailCtrl.$inject = ['$scope', '$routeParams'];

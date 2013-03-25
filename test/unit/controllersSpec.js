@@ -8,7 +8,7 @@ describe('PhoneCat controllers', function() {
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-      $httpBackend.expectGET('reports/reports_latest.json').
+      $httpBackend.expectGET('data/reports_latest.json').
           respond([{uuid: 'FOO1'}, {uuid: 'FOO2'}]);
 
       scope = $rootScope.$new();
@@ -20,8 +20,8 @@ describe('PhoneCat controllers', function() {
       expect(scope.reports).toBeUndefined();
       $httpBackend.flush();
 
-      expect(scope.reports).toEqual([{name: 'FOO1'},
-                                   {name: 'FOO2'}]);
+      expect(scope.reports).toEqual([{uuid: 'FOO1'},
+                                   {uuid: 'FOO2'}]);
     });
 
 
