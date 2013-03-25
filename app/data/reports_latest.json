@@ -1,0 +1,38 @@
+[
+    {
+        "@uuid": "AAAAA-BBBBB-CCCCC-DDDDD-EEEEE",
+        "@source": "puppet://pg-mon-001.mgmt.pg.net.local",
+        "@source": "puppet://pg-mon-001.mgmt.pg.net.local/foobar",
+        "@source_path": "/usr/share/gem/1.8/gems/foo/bar.rb",
+        "@tags": [],
+        "@source_host": "pg-mon-001.mgmt.pg.net.local",
+        "@fields": {
+            "environment": "masterbranch",
+            "report_format": "unknown",
+            "puppet_version": "3.0.0",
+            "status": "moo",
+            "start_time": "XXXXX",
+            "end_time": "YYYYY",
+            "metrics": {}
+            "logs": [ "foo", "bar", "this is a log message" ]
+        }
+    },
+    {
+         "@uuid": "AAAAA-BBBBB-CCCCC-DDDDD-EEEEF",
+         "@source": "puppet://oy-mon-001.mgmt.pg.net.local",
+         "@source": "puppet://oy-mon-001.mgmt.pg.net.local/foobar",
+         "@source_path": "/usr/share/gem/1.8/gems/foo/bar.rb",
+         "@tags": [],
+         "@source_host": "oy-mon-001.mgmt.pg.net.local",
+         "@fields": {
+             "environment": "masterbranch",
+             "report_format": "unknown",
+             "puppet_version": "3.0.0",
+             "status": "moo",
+             "start_time": "XXXXX",
+             "end_time": "YYYYY",
+             "metrics": {}
+             "logs": [ "foo", "bar", "this is a log message" ]
+         }
+     },
+]
