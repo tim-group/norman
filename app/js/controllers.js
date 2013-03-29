@@ -3,17 +3,21 @@
 /* Controllers */
 
 function cleanData(data) {
-  var out = {}
-  Object.keys(data).forEach(function(key) {
+  var out = {};
+  for (var key in data) {
     var newKey = key.replace(/@/g, "");
     out[newKey] = data[key];
-  });
+  }
   return out;
 }
 
 function ReportListCtrl($scope, $http) {
   $http.get('data/reports_latest.json').success(function(data) {
-    $scope.reports = cleanData(data);
+    var d = [];
+    data.forEach(function(datum) {
+        d.push(cleanData(datum));
+    });
+    $scope.reports = d;
   });
 
   $scope.orderProp = 'age';
