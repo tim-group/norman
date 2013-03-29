@@ -8,10 +8,11 @@ use Data::GUID;
 use ElasticSearch;
 
 my $es = ElasticSearch->new( servers => 'localhost:9200' );
-$es->trace_calls(1); 
+#$es->trace_calls(1); 
 my $results = $es->search(
   index => 'logstash-2013.03.29',
   type  => 'puppet-apply',
+  "from" => 0, "size" => 1000,
   query => {
         "term" => { '@tags' => "puppet-apply" }
   }
