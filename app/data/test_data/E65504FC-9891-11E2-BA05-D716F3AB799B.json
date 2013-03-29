@@ -1,0 +1,96 @@
+{
+   "@timestamp" : "2013-03-29T16:25:35.555Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "unchanged",
+      "logs" : [
+         "content changed '{md5}01416968669b7098901522403329797e' to '{md5}bf3f9b489b0273fecd25a3dd49ac2da6'",
+         "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value absent, should be GIT REVISION: 3f512d831cc990eaf4ac1d48abc6c14ec9b1e715 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}cc7a0520ff92d5b40e7124953664f7cb, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}79297da1c48e15432b7d5f49e3893bf8, should be {md5}1207b77ae3bfc6aa36f59c5cb1ebed4f (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 6 events",
+         "Finished catalog run in 88.22 seconds"
+      ],
+      "environment" : "masterbranch",
+      "puppet_version" : "3.1.0",
+      "end_time" : "Fri Mar 29 16:25:35 +0000 2013",
+      "metrics" : {
+         "resources" : {
+            "Total" : 1128,
+            "Changed" : 0,
+            "Out of sync" : 6,
+            "Restarted" : 0,
+            "Failed" : 0,
+            "Skipped" : 6,
+            "Scheduled" : 0,
+            "Failed to restart" : 0
+         },
+         "changes" : {
+            "Total" : 0
+         },
+         "time" : {
+            "Exec" : 14.105059,
+            "User" : 0.102045,
+            "Augeas" : 1.123513,
+            "Service" : 1.873853,
+            "Resources" : 0.000276,
+            "Notify" : 0.002555,
+            "Filebucket" : 0.000503,
+            "File" : 19.804679,
+            "Total" : 94.2379489777679,
+            "Sshkey" : 0.0990539999999999,
+            "Postfix virtual" : 0.001122,
+            "Cron" : 0.001947,
+            "Ssh authorized key" : 0.025271,
+            "Group" : 0.014628,
+            "Firewall" : 0.017481,
+            "Config retrieval" : 54.6041619777679,
+            "Package" : 2.461801
+         },
+         "events" : {
+            "Total" : 6,
+            "Failure" : 0,
+            "Success" : 0,
+            "Noop" : 6
+         }
+      },
+      "@location" : "oy"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://oy-frapp-001.mgmt.oy.net.local",
+   "@uuid" : "E65504FC-9891-11E2-BA05-D716F3AB799B",
+   "@source_host" : "oy-frapp-001.mgmt.oy.net.local",
+   "@message" : "puppet run on oy-frapp-001.mgmt.oy.net.local",
+   "@type" : "puppet-apply"
+}
+

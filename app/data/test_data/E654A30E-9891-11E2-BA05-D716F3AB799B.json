@@ -1,0 +1,95 @@
+{
+   "@timestamp" : "2013-03-29T16:19:55.105Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "unchanged",
+      "logs" : [
+         "content changed '{md5}01416968669b7098901522403329797e' to '{md5}bf3f9b489b0273fecd25a3dd49ac2da6'",
+         "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value absent, should be GIT REVISION: 3f512d831cc990eaf4ac1d48abc6c14ec9b1e715 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}cc7a0520ff92d5b40e7124953664f7cb, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}fedf49080957289ea30e6f71b48ff8c2, should be {md5}981da09b13f030b4544b51119e0858fa (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 6 events",
+         "Finished catalog run in 48.40 seconds"
+      ],
+      "environment" : "masterbranch",
+      "puppet_version" : "3.1.0",
+      "end_time" : "Fri Mar 29 16:19:55 +0000 2013",
+      "metrics" : {
+         "resources" : {
+            "Total" : 1250,
+            "Changed" : 0,
+            "Out of sync" : 6,
+            "Restarted" : 0,
+            "Failed" : 0,
+            "Skipped" : 6,
+            "Scheduled" : 0,
+            "Failed to restart" : 0
+         },
+         "changes" : {
+            "Total" : 0
+         },
+         "time" : {
+            "Total" : 87.9042160430298,
+            "Exec" : 8.511457,
+            "Sshkey" : 0.094079,
+            "User" : 0.056579,
+            "Postfix virtual" : 0.001093,
+            "Cron" : 0.001761,
+            "Ssh authorized key" : 0.012076,
+            "Group" : 0.009903,
+            "Service" : 1.23948,
+            "Resources" : 0.000201,
+            "Firewall" : 0.014403,
+            "Filebucket" : 0.000551,
+            "Notify" : 0.003397,
+            "Config retrieval" : 55.6088800430298,
+            "File" : 21.895613,
+            "Package" : 0.454743
+         },
+         "events" : {
+            "Total" : 6,
+            "Failure" : 0,
+            "Success" : 0,
+            "Noop" : 6
+         }
+      },
+      "@location" : "oy"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://oy-ns-001.mgmt.oy.net.local",
+   "@uuid" : "E654A30E-9891-11E2-BA05-D716F3AB799B",
+   "@source_host" : "oy-ns-001.mgmt.oy.net.local",
+   "@message" : "puppet run on oy-ns-001.mgmt.oy.net.local",
+   "@type" : "puppet-apply"
+}
+
