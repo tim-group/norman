@@ -4,6 +4,10 @@ body {
   padding-top: 20px;
 }
 
+.details table {
+  width:800px;
+}
+
 .phones {
   list-style: none;
 }

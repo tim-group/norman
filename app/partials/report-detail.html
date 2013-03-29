@@ -1,16 +1,28 @@
-<div style="width:800px";>
-  <p>Detail view for {{report.source}} @ {{report.timestamp}} ({{uuid}})</p>
+<div class="details">
+  <h2>Details for {{report.source_host}} @ {{report.timestamp | date:'short'}}</h2>
+<br/>
 <table class="table table-bordered table-condensed">
   <tr><th>Status</th><td>{{report.fields.status}}</td></tr>
   <tr><th>Source</th><td>{{report.source}}</td></tr>
   <tr><th>UUID</th><td>{{report.uuid}}</td></tr>
   <tr><th>Environment</th><td>{{report.fields.environment}}</td></tr>
+
+</table>  
+<table class="table table-bordered table-condensed">
   
   <tr><th colspan=2>Metrics</th></tr>  
-  <tr ng-repeat="(name, metric) in report.fields.metrics">
-    <td>{{ name }}</td><td>{{ metric }}</td>
+  <tr ng-repeat="(name, metricDetails) in report.fields.metrics">
+    <td>{{ name }}</td>
+    <td>
+      <div ng-repeat="(detailName, detail) in metricDetails">
+        {{ detailName }} : {{ detail }}
+      </div>
+    </td>
   </tr>
 
+</table>  
+<table class="table table-bordered table-condensed">
+  
   <tr><th colspan=2>Lines</th></tr>  
   <tr><td colspan="2">
     <span ng-repeat="line in report.fields.logs">{{ line }}<br/><span>
