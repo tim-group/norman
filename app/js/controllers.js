@@ -3,8 +3,12 @@
 /* Controllers */
 
 function cleanData(data) {
-  var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "")
-  return angular.fromJson(jsonStringWithoutEvilAtSigns);
+  var out = {}
+  Object.keys(data).forEach(function(key) {
+    var newKey = key.replace(/@/g, "");
+    out[newKey] = data[key];
+  });
+  return out;
 }
 
 function ReportListCtrl($scope, $http) {
