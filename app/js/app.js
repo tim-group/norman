@@ -2,7 +2,7 @@
 
 /* App Module */
 
-angular.module('phonecat', []).
+angular.module('norman', []).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/latest', {templateUrl: 'partials/report-latest.html',   controller: ReportListCtrl}).
