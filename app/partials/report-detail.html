@@ -1,6 +1,19 @@
-<p>Detail view for {{report.source}} @ {{report.timestamp}} ({{uuid}})</p>
-<div>
-  <li ng-repeat="line in report.fields.logs" class="thumbnail">
-    <p>{{ line }}</p>
-  </li>
+<div style="width:800px";>
+  <p>Detail view for {{report.source}} @ {{report.timestamp}} ({{uuid}})</p>
+<table class="table table-bordered table-condensed">
+  <tr><th>Status</th><td>{{report.fields.status}}</td></tr>
+  <tr><th>Source</th><td>{{report.source}}</td></tr>
+  <tr><th>UUID</th><td>{{report.uuid}}</td></tr>
+  <tr><th>Environment</th><td>{{report.fields.environment}}</td></tr>
+  
+  <tr><th colspan=2>Metrics</th></tr>  
+  <tr ng-repeat="(name, metric) in report.fields.metrics">
+    <td>{{ name }}</td><td>{{ metric }}</td>
+  </tr>
+
+  <tr><th colspan=2>Lines</th></tr>  
+  <tr><td colspan="2">
+    <span ng-repeat="line in report.fields.logs">{{ line }}<br/><span>
+  </td></tr>
+</table>
 </div>
