@@ -3,15 +3,23 @@
 /* Controllers */
 
 function cleanData(data) {
-  var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "")
-  return angular.fromJson(jsonStringWithoutEvilAtSigns);
+  var out = {};
+  for (var key in data) {
+    var newKey = key.replace(/@/g, "");
+    out[newKey] = data[key];
+  }
+  return out;
 }
 
 function ReportListCtrl($scope, $http) {
   $http.get('data/reports_latest.json').success(function(data) {
-    var parsedData = cleanData(data);
-    addAllContextsTo(parsedData);
-    $scope.reports = parsedData;
+    var d = [];
+    data.forEach(function(datum) {
+        var dat = cleanData(datum);
+        addContextTo(dat);
+        d.push(dat);
+    });
+    $scope.reports = d;
   });
 
   $scope.orderProp = 'age';
@@ -29,12 +37,6 @@ function ReportDetailCtrl($scope, $routeParams, $http) {
 }
 
 //ReportDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
-
-function addAllContextsTo(allData) {
-  angular.forEach(allData, function(data) {
-    addContextTo(data);
-  })
-}
 
 function addContextTo(data) {
   data.iconFailures = "icon-ok";
