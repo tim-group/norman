@@ -1,0 +1,61 @@
+{
+   "@timestamp" : "2013-03-29T04:48:17.130Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "unchanged",
+      "logs" : [
+         "current_value {md5}3e63460ba073cf41f0885b7da6791e3e, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}fc47c6b4a51d80ca3bd93eb8dfda09b6, should be {md5}9285660d97aa2d4f0fa42dee91818048 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value absent, should be GIT REVISION: 3b1292a37e76b94925cf6bd634b056016d418cff to c29a0a4b579449d0dde546594c2ad8c2b47479fc (noop)",
+         "Would have triggered 'refresh' from 2 events",
+         "current_value {md5}c71c28c357f666b0421edfe4d94e1556, should be {md5}faed90e08e2a685451e4065e7423eb9f (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 6 events",
+         "Finished catalog run in 38.40 seconds"
+      ],
+      "environment" : "masterbranch",
+      "puppet_version" : "3.1.0",
+      "end_time" : "Fri Mar 29 04:48:17 +0000 2013",
+      "metrics" : {
+         "resources" : "#<Puppet::Util::Metric:0x7f97b7f8cef0>",
+         "changes" : "#<Puppet::Util::Metric:0x7f97b7f89818>",
+         "events" : "#<Puppet::Util::Metric:0x7f97b7f84430>",
+         "time" : "#<Puppet::Util::Metric:0x7f97b7f94d80>"
+      },
+      "@location" : "pg"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://pg-puppetdevice-001.mgmt.pg.net.local",
+   "@uuid" : "58F9676A-9878-11E2-A9B5-BE2D1F445CC3",
+   "@source_host" : "pg-puppetdevice-001.mgmt.pg.net.local",
+   "@message" : "puppet run on pg-puppetdevice-001.mgmt.pg.net.local",
+   "@type" : "mp-zmq"
+}
+

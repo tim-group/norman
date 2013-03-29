@@ -1,0 +1,45 @@
+{
+   "@timestamp" : "2013-03-29T11:27:09.748Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "unchanged",
+      "logs" : [
+         "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value absent, should be GIT REVISION: 09fdbe5024d92e425984339e4aab96c1e17b706a to c29a0a4b579449d0dde546594c2ad8c2b47479fc (noop)",
+         "current_value {md5}a5366ab1417bee5b29ca6312e04be864, should be {md5}9285660d97aa2d4f0fa42dee91818048 (noop)",
+         "Would have triggered 'refresh' from 2 events",
+         "current_value {md5}1cb2213388f635d5ebb4bb963a1c6177, should be {md5}e6eb03c3d8473a1dd6c472f1b673368d (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 4 events",
+         "Finished catalog run in 118.06 seconds"
+      ],
+      "environment" : "masterbranch",
+      "end_time" : "Fri Mar 29 11:27:09 +0000 2013",
+      "puppet_version" : "3.1.0",
+      "metrics" : {
+         "resources" : "#<Puppet::Util::Metric:0x7fc68eae8560>",
+         "changes" : "#<Puppet::Util::Metric:0x7fc68eae7b60>",
+         "events" : "#<Puppet::Util::Metric:0x7fc68eae9708>",
+         "time" : "#<Puppet::Util::Metric:0x7fc68eaea450>"
+      },
+      "@location" : "oy"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://dominica.oyldn.youdevise.com",
+   "@uuid" : "58F96A94-9878-11E2-A9B5-BE2D1F445CC3",
+   "@source_host" : "dominica.oyldn.youdevise.com",
+   "@message" : "puppet run on dominica.oyldn.youdevise.com",
+   "@type" : "mp-zmq"
+}
+
