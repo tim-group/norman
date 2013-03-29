@@ -1,0 +1,89 @@
+{
+   "@timestamp" : "2013-03-29T15:16:40.095Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "changed",
+      "logs" : [
+         "Retrieving plugin",
+         "Loading facts in /var/lib/puppet/lib/facter/uuid.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/static_facts.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/concat_basedir.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/bonding.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/mysql_databases.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/default_gateway.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/iptables_version.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/ip6tables_version.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/partitions.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/facter_dot_d.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/mysql.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/mysql_master.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/augeasversion.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/root_home.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/mysql_slave.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/filesystems.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/iptables_persistent_version.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/puppet_vardir.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/last_run_git_revision.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/users.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/mounts.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/rvm_installed.rb",
+         "Loading facts in /var/lib/puppet/lib/facter/local_volumes.rb",
+         "Caching catalog for pg-mon-001.pgldn.youdevise.com",
+         "Applying configuration version '1364570108'",
+         "\n--- /etc/mcollective/facts.yaml\t2013-03-29 15:12:54.054768181 +0000\n+++ /tmp/puppet-file20130329-454-1atu7au-0\t2013-03-29 15:16:22.869628539 +0000\n@@ -42,7 +42,7 @@\n    kernelmajversion: 2.6\n    kernelrelease: 2.6.38-15-server\n    kernelversion: 2.6.38\n-   last_run_git_revision: c29a0a4b579449d0dde546594c2ad8c2b47479fc\n+   last_run_git_revision: d28ce90901f7af21e3661f6244c3b7fcea569d33\n    last_successful_git_revision: unknown\n    local_apt_repos_version: 575dcd9443d9c544433c65393a5e545a771995f7\n    local_deb_repos_version: Thu Mar 28 17:58:50 UTC 2013\n",
+         "executed successfully",
+         "Finished catalog run in 53.56 seconds"
+      ],
+      "environment" : "masterbranch",
+      "puppet_version" : "3.1.0",
+      "end_time" : "Fri Mar 29 15:16:40 +0000 2013",
+      "metrics" : {
+         "resources" : {
+            "Total" : 1250,
+            "Changed" : 2,
+            "Out of sync" : 2,
+            "Restarted" : 0,
+            "Failed" : 0,
+            "Skipped" : 6,
+            "Failed to restart" : 0,
+            "Scheduled" : 0
+         },
+         "changes" : {
+            "Total" : 2
+         },
+         "time" : {
+            "Total" : 71.1750918754425,
+            "Exec" : 10.1269,
+            "User" : 0.084054,
+            "Sshkey" : 0.080936,
+            "Postfix virtual" : 0.000359,
+            "Cron" : 0.003736,
+            "Ssh authorized key" : 0.013918,
+            "Group" : 0.014294,
+            "Service" : 3.121778,
+            "Firewall" : 0.001896,
+            "Filebucket" : 0.000343,
+            "File" : 21.778868,
+            "Config retrieval" : 34.4670078754425,
+            "Package" : 1.48006,
+            "Mount" : 0.000942
+         },
+         "events" : {
+            "Total" : 2,
+            "Failure" : 0,
+            "Success" : 2
+         }
+      },
+      "@location" : "pg"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://pg-mon-001.pgldn.youdevise.com",
+   "@uuid" : "B3C63AD2-9883-11E2-BE4C-E95A19EF5199",
+   "@message" : "puppet run on pg-mon-001.pgldn.youdevise.com",
+   "@source_host" : "pg-mon-001.pgldn.youdevise.com",
+   "@type" : "puppet-apply"
+}
+
