@@ -1,11 +1,11 @@
 # Norman
 
-Norman is a (very) small subset of [[http://theforeman.org/]], just
+Norman is a (very) small subset of [Foreman](http://theforeman.org/), just
 for viewing puppet run reports.
 
 ## Getting reports
 
-See [[https://github.com/youdevise/puppet-logstash-reporter/]]
+See [Puppet logstash reporter](https://github.com/youdevise/puppet-logstash-reporter/)
 
 for the report you need to add to puppet.
 
