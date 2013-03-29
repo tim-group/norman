@@ -1,0 +1,84 @@
+{
+   "@timestamp" : "2013-03-29T15:28:30.493Z",
+   "@tags" : [
+      "puppet-apply"
+   ],
+   "@fields" : {
+      "report_format" : 3,
+      "status" : "unchanged",
+      "logs" : [
+         "current_value absent, should be GIT REVISION: 19cdc47d2d4385c509414958aaa4ba093c0aa617 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+         "current_value {md5}70f351d459f9a2eeab8febc895a595b2, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+         "Would have triggered 'refresh' from 2 events",
+         "current_value 0644, should be 0750 (noop)",
+         "current_value {md5}24442cde5e81bee8f67462a8590f68c4, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value running, should be stopped (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "current_value {md5}c711afd175f85d2ae5551812f8ce38af, should be {md5}9ad683c86771c3c025cf273b1e1be5da (noop)",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 1 events",
+         "Would have triggered 'refresh' from 2 events",
+         "Would have triggered 'refresh' from 6 events",
+         "Finished catalog run in 91.78 seconds"
+      ],
+      "environment" : "masterbranch",
+      "puppet_version" : "3.1.0",
+      "end_time" : "Fri Mar 29 15:28:30 +0000 2013",
+      "metrics" : {
+         "resources" : {
+            "Total" : 4352,
+            "Changed" : 0,
+            "Out of sync" : 7,
+            "Restarted" : 0,
+            "Failed" : 0,
+            "Skipped" : 6,
+            "Failed to restart" : 0,
+            "Scheduled" : 0
+         },
+         "changes" : {
+            "Total" : 0
+         },
+         "time" : {
+            "Exec" : 9.119957,
+            "User" : 0.417782,
+            "Service" : 2.227981,
+            "Nagios host" : 0.041357,
+            "Filebucket" : 0.000449,
+            "Notify" : 0.001398,
+            "File" : 45.55441,
+            "Total" : 221.859783163147,
+            "Nagios service" : 1.376319,
+            "Sshkey" : 0.068536,
+            "Nagios command" : 0.007855,
+            "Ssh authorized key" : 0.036008,
+            "Postfix virtual" : 0.002993,
+            "Cron" : 0.002494,
+            "Group" : 0.008218,
+            "Nagios servicegroup" : 0.002246,
+            "Firewall" : 0.002079,
+            "Config retrieval" : 161.133828163147,
+            "Package" : 1.855873
+         },
+         "events" : {
+            "Total" : 7,
+            "Failure" : 0,
+            "Success" : 0,
+            "Noop" : 7
+         }
+      },
+      "@location" : "pg"
+   },
+   "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+   "@source" : "puppet://australia.pgldn.youdevise.com",
+   "@uuid" : "E655C9D2-9891-11E2-BA05-D716F3AB799B",
+   "@message" : "puppet run on australia.pgldn.youdevise.com",
+   "@source_host" : "australia.pgldn.youdevise.com",
+   "@type" : "puppet-apply"
+}
+
