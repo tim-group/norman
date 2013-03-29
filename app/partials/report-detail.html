@@ -1,6 +1,6 @@
-<p>
-TBD: detail view for {{uuid}}
-</p>
-<li ng-repeat="line in report.fields.logs" class="thumbnail">
-  <p>{{ line }}</p>
-</li>
+<p>Detail view for {{report.source}} @ {{report.timestamp}} ({{uuid}})</p>
+<div>
+  <li ng-repeat="line in report.fields.logs" class="thumbnail">
+    <p>{{ line }}</p>
+  </li>
+</div>

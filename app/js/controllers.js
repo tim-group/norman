@@ -4,7 +4,7 @@
 
 function ReportListCtrl($scope, $http) {
   $http.get('data/reports_latest.json').success(function(data) {
-	var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "")
+    var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "");
     $scope.reports = angular.fromJson(jsonStringWithoutEvilAtSigns);
   });
 
@@ -17,7 +17,8 @@ function ReportListCtrl($scope, $http) {
 function ReportDetailCtrl($scope, $routeParams, $http) {
   $scope.uuid = $routeParams.uuid;
   $http.get('data/' + $routeParams.uuid + '.json').success(function(data) {
-      $scope.report = data;
+    var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "");
+    $scope.report = angular.fromJson(jsonStringWithoutEvilAtSigns);
   });
 }
 
