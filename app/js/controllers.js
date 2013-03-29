@@ -12,13 +12,22 @@ function cleanData(data) {
 }
 
 function ReportListCtrl($scope, $http) {
-  $http.get('data/reports_latest.json').success(function(data) {
-    var d = [];
-    data.forEach(function(datum) {
-        var dat = cleanData(datum);
-        addContextTo(dat);
-        d.push(dat);
-    });
+  $http.post('/es/_all/puppet-apply/_search', angular.toJson({
+   "from" : 0, "size" : 100,
+   "query": {
+      "term": {
+         "@tags": "puppet-apply"
+      }
+   },
+   "sort" : [
+        { "@timestamp" : {"order" : "desc"} }
+   ]
+})).success(function(data) {
+    var d = []
+    data['hits']['hits'].forEach(function(hit) {
+        hit["_source"]["uuid"] = hit["_index"].concat("/").concat(hit["_id"]);
+        d.push(addContextTo(cleanData(hit["_source"])));
+    })
     $scope.reports = d;
   });
 
@@ -29,10 +38,8 @@ function ReportListCtrl($scope, $http) {
 
 function ReportDetailCtrl($scope, $routeParams, $http) {
   $scope.uuid = $routeParams.uuid;
-  $http.get('data/' + $routeParams.uuid + '.json').success(function(data) {
-    var parsedData = cleanData(data);
-    addContextTo(parsedData);
-    $scope.report = parsedData;
+  $http.get('/es/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
+    $scope.report = addContextTo(cleanData(data["_source"]));
   });
 }
 
