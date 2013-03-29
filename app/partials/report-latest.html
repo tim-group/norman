@@ -16,8 +16,7 @@
 
       <ul class="runs">
         <li ng-repeat="report in reports | filter:query | orderBy:orderProp" class="thumbnail">
-          <a href="#/report/{{report.uuid}}">{{report.source}}</a>
-          <p>MOO</p>
+          <a href="#/report/{{report.uuid}}">{{report.source}}</a> @ {{report.timestamp}}
         </li>
       </ul>
 

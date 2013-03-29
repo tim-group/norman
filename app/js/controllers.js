@@ -4,7 +4,8 @@
 
 function ReportListCtrl($scope, $http) {
   $http.get('data/reports_latest.json').success(function(data) {
-    $scope.reports = data;
+	var jsonStringWithoutEvilAtSigns = angular.toJson(data).replace(/@/g, "")
+    $scope.reports = angular.fromJson(jsonStringWithoutEvilAtSigns);
   });
 
   $scope.orderProp = 'age';
