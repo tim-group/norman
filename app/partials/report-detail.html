@@ -8,6 +8,7 @@
   <tr><th>Environment</th><td>{{report.fields.environment}}</td></tr>
 
 </table>  
+
 <table class="table table-bordered table-condensed">
   
   <tr><th colspan=2>Metrics</th></tr>  
@@ -15,7 +16,7 @@
     <td>{{ name }}</td>
     <td>
       <div ng-repeat="(detailName, detail) in metricDetails">
-        {{ detailName }} : {{ detail }}
+        <span class="{{$eval('reportContext.metrics.' +  name + '.' + detailName) }}">{{ detailName }} : {{ detail }}</span>
       </div>
     </td>
   </tr>

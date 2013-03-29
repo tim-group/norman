@@ -5,7 +5,17 @@ body {
 }
 
 .details table {
-  width:800px;
+  width: 800px;
+}
+
+.details .highlight {
+  font-weight: bold;
+  color: green;
+}
+
+.details .error {
+  font-weight: bold;
+  color: red;
 }
 
 .phones {
