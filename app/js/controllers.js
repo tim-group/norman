@@ -49,4 +49,5 @@ function addContextTo(data) {
     data.hadChanges = "hadChanges";
     data.iconChanges = "icon-exclamation-sign";
   }
+  return data;
 }
