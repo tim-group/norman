@@ -22,7 +22,7 @@ function ReportListCtrl($scope, $http) {
     $scope.reports = d;
   });
 
-  $scope.orderProp = 'age';
+  $scope.orderProp = '-timestamp';
 }
 
 //ReportListCtrl.$inject = ['$scope', '$http'];
