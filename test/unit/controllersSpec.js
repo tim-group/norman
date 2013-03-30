@@ -5,27 +5,33 @@ describe('Norman controllers', function() {
 
     var all_reports = [
             {
-                '@uuid': 'FOO1',
-                '@fields': {
-                    'metrics': {
-                        'resources': {
-                            'Failed': 0
-                        },
-                        'events': {
-                            'Noop': 0
+                '_id': 'FOO1',
+                '_index': 'logstash-2013.03.12',
+                '_source': {
+                    '@fields': {
+                        'metrics': {
+                            'resources': {
+                                'Failed': 0
+                            },
+                            'events': {
+                                'Noop': 0
+                            }
                         }
                     }
                 }
             },
             {
-                '@uuid': 'FOO2',
-                '@fields': {
-                    'metrics': {
-                        'resources': {
-                            'Failed': 0
-                        },
-                        'events': {
-                            'Noop': 0
+                '_id': 'FOO2',
+                '_index': 'logstash-2013.03.12',
+                '_source': {
+                    '@fields': {
+                        'metrics': {
+                            'resources': {
+                                'Failed': 0
+                            },
+                            'events': {
+                                'Noop': 0
+                            }
                         }
                     }
                 }
@@ -34,8 +40,8 @@ describe('Norman controllers', function() {
 
     var all_reports_cleaned = [];
     all_reports.forEach(function (report) {
-        var n = angular.fromJson(angular.toJson(report));
-        n['uuid'] = n['@uuid'];
+        var n = angular.fromJson(angular.toJson(report['_source']));
+        n['uuid'] = "logstash-2013.03.12/" + report['_id'];
         n['fields'] = n['@fields'];
         delete(n['@uuid']);
         delete(n['@fields']);
@@ -50,9 +56,7 @@ describe('Norman controllers', function() {
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
-//      $httpBackend.expectPOST('/add-msg.py', 'message content').respond(201, '');
-      $httpBackend.expectGET('data/reports_latest.json').
-          respond(all_reports);
+      $httpBackend.expectPOST('/es/_all/puppet-apply/_search', {"from":0,"size":100,"query":{"term":{"@tags":"puppet-apply"}},"sort":[{"@timestamp":{"order":"desc"}}]}).respond(200, {'hits':{'hits': all_reports}});
 
       scope = $rootScope.$new();
       ctrl = $controller(ReportListCtrl, {$scope: scope});
@@ -85,10 +89,11 @@ describe('Norman controllers', function() {
 
       beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
         $httpBackend = _$httpBackend_;
-        $httpBackend.expectGET('data/AAAAA-BBBBB-CCCCC-DDDDD-EEEEE.json').
+        $httpBackend.expectGET('/es/logstash-2013.03.13/puppet-apply/AAAAA-BBBBB-CCCCC-DDDDD-EEEEE').
             respond(report);
 
-        $routeParams.uuid = 'AAAAA-BBBBB-CCCCC-DDDDD-EEEEE'
+        $routeParams.uuid = 'AAAAA-BBBBB-CCCCC-DDDDD-EEEEE';
+        $routeParams.index = 'logstash-2013.03.13';
 
         scope = $rootScope.$new();
         ctrl = $controller(ReportDetailCtrl, {$scope: scope});
