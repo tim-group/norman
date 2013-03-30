@@ -11,8 +11,14 @@ function cleanData(data) {
   return out;
 }
 
+// Sniff if we're being run as an elasticsearch plugin
+function elasticsearch_url() {
+    var location = window.location;
+    return (/_plugin/.test(location.href.toString())) ? location.protocol + "//" + location.host : "/es"
+  }
+
 function ReportListCtrl($scope, $http) {
-  $http.post('/es/_all/puppet-apply/_search', angular.toJson({
+  $http.post(elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
    "from" : 0, "size" : 100,
    "query": {
       "term": {
@@ -38,7 +44,7 @@ function ReportListCtrl($scope, $http) {
 
 function ReportDetailCtrl($scope, $routeParams, $http) {
   $scope.uuid = $routeParams.uuid;
-  $http.get('/es/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
+  $http.get(elasticsearch_url() + '/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
     $scope.report = addContextTo(cleanData(data["_source"]));
   });
 }
