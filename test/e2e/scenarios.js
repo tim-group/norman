@@ -4,11 +4,11 @@
 
 describe('PhoneCat App', function() {
 
-  it('should redirect index.html to index.html#/phones', function() {
+  it('should redirect index.html to index.html#/latest', function() {
     browser().navigateTo('../../app/index.html');
-    expect(browser().location().url()).toBe('/phones');
+    expect(browser().location().url()).toBe('/latest');
   });
-
+/*
 
   describe('Phone list view', function() {
 
@@ -62,4 +62,6 @@ describe('PhoneCat App', function() {
       expect(binding('phoneId')).toBe('nexus-s');
     });
   });
+  */
 });
+
