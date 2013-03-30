@@ -1,5 +1,7 @@
 # Norman
 
+[![Build Status](https://travis-ci.org/youdevise/norman.png)](https://travis-ci.org/youdevise/norman)
+
 Norman is a (very) small subset of [Foreman](http://theforeman.org/), just
 for viewing puppet run reports.
 
