@@ -1,0 +1,23 @@
+{
+  "name": "norman",
+  "version": "0.0.0",
+  "description": "A Puppet run reports viewer for reports stored in Elasticsearch",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/testacular start --single-run --browsers PhantomJS config/testacular.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/youdevise/norman.git"
+  },
+  "author": "Tomas Doran",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "df404f5735ddb330bfea6b41fae17a12bf3cd1c7",
+  "devDependencies": {
+    "testacular": "~0.6"
+  }
+}
