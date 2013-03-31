@@ -2,20 +2,20 @@
 
 /* http://docs.angularjs.org/guide/dev_guide.e2e-testing */
 
-describe('PhoneCat App', function() {
+describe('Norman app', function() {
 
   it('should redirect index.html to index.html#/latest', function() {
     browser().navigateTo('../../app/index.html');
     expect(browser().location().url()).toBe('/latest');
   });
-/*
 
-  describe('Phone list view', function() {
+  describe('Report list view', function() {
 
     beforeEach(function() {
-      browser().navigateTo('../../app/index.html#/phones');
+      browser().navigateTo('../../app/index.html#/latest');
     });
-
+  });
+/*
 
     it('should filter the phone list as user types into the search box', function() {
       expect(repeater('.phones li').count()).toBe(20);

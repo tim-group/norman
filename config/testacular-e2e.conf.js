@@ -6,11 +6,9 @@ files = [
   'test/e2e/**/*.js'
 ];
 
-autoWatch = false;
+autoWatch = true;
 
 browsers = ['Chrome'];
-
-singleRun = true;
 
 proxies = {
   '/': 'http://localhost:8000/'
