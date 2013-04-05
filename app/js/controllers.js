@@ -13,9 +13,13 @@ function cleanData(data) {
 
 // Sniff if we're being run as an elasticsearch plugin
 function elasticsearch_url() {
-    var location = window.location;
-    return (/_plugin/.test(location.href.toString())) ? location.protocol + "//" + location.host : "/es"
+  var location = window.location;
+  if (/_plugin/.test(location.href.toString())) {
+    var trimmed = /.*\/_plugin\//.exec(location.href.toString());
+    return trimmed[0].replace("/_plugin/", "/");
   }
+  return "/es"
+}
 
 function ReportListCtrl($scope, $http) {
   $http.post(elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
