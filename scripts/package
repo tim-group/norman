@@ -1,0 +1,14 @@
+#!/bin/sh
+HASH=`git rev-parse --short HEAD`
+if [ "z$BUILD_NUMBER" == "z" ];
+then
+    iteration="0.pre.${HASH}"
+else
+    iteration=$BUILD_NUMBER
+fi
+mkdir /tmp/build || exit 1
+mkdir -p /tmp/build/elasticsearch/plugins/norman || exit 1
+cp -r app /tmp/build/elasticsearch/plugins/norman/_site
+fpm -t deb -s dir --architecture all -C /tmp/build --name norman --version 0.0.1 --iteration ${iteration} --prefix /opt || exit 1
+ rm -rf /tmp/build || exit 1
+
