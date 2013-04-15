@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 HASH=`git rev-parse --short HEAD`
 if [ "z$BUILD_NUMBER" == "z" ];
 then
