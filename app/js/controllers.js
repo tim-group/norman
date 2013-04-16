@@ -21,7 +21,7 @@ function elasticsearch_url() {
   return "/es"
 }
 
-function ReportListCtrl($scope, $http) {
+function ReportListCtrl($scope, $http, Phone) {
   $http.post(elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
    "from" : 0, "size" : 100,
    "query": {
@@ -44,7 +44,7 @@ function ReportListCtrl($scope, $http) {
   $scope.orderProp = '-timestamp';
 }
 
-//ReportListCtrl.$inject = ['$scope', '$http'];
+//ReportListCtrl.$inject = ['$scope', '$http', 'Phone'];
 
 function ReportDetailCtrl($scope, $routeParams, $http) {
   $scope.uuid = $routeParams.uuid;

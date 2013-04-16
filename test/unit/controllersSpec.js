@@ -54,6 +54,8 @@ describe('Norman controllers', function() {
   describe('ReportListCtrl', function(){
     var scope, ctrl, $httpBackend;
 
+    beforeEach(module('normanServices'));
+
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
       $httpBackend = _$httpBackend_;
       $httpBackend.expectPOST('/es/_all/puppet-apply/_search', {"from":0,"size":100,"query":{"term":{"@tags":"puppet-apply"}},"sort":[{"@timestamp":{"order":"desc"}}]}).respond(200, {'hits':{'hits': all_reports}});
@@ -86,6 +88,8 @@ describe('Norman controllers', function() {
       var scope, ctrl, $httpBackend;
 
       var report = all_reports[0]
+
+      beforeEach(module('normanServices'));
 
       beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
         $httpBackend = _$httpBackend_;
