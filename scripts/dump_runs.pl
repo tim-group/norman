@@ -21,17 +21,17 @@ use Data::Dumper;
 
 #warn Dumper($results);
 
-my @data = map { $_->{_source} } @{ $results->{hits}{hits} };
+my @data = @{ $results->{hits}{hits} };
 
-system("rm -r /tmp/test_data; mkdir /tmp/test_data");
+mkdir("test_data") if ! -d "test_data";
+system("rm -r test_data/*");
 foreach my $datum (@data) {
-    $datum->{'@uuid'} = Data::GUID->new()->as_string;
-    open(my $fh, '>', "/tmp/test_data/" . $datum->{'@uuid'} . ".json") or die;
+    open(my $fh, '>', "test_data/" . $datum->{'_id'} . ".json") or die;
     print $fh to_json($datum, {utf8 => 1, pretty => 1}) . "\n";
     close($fh);
 }
-open(my $fh, '>', "/tmp/test_data/reports_latest.json") or die;
-print $fh to_json(\@data, {utf8 => 1, pretty => 1}) . "\n";
+open(my $fh, '>', "test_data/reports_latest.json") or die;
+print $fh to_json($results, {utf8 => 1, pretty => 1}) . "\n";
 close($fh);
 
 
