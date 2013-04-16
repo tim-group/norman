@@ -11,7 +11,8 @@ var DEFAULT_PORT = 8000;
 function main(argv) {
   new HttpServer({
     'GET': createServlet(StaticServlet),
-    'HEAD': createServlet(StaticServlet)
+    'HEAD': createServlet(StaticServlet),
+    'POST': createServlet(StaticServlet)
   }).start(Number(argv[2]) || DEFAULT_PORT);
 }
 
@@ -93,6 +94,9 @@ StaticServlet.prototype.handleRequest = function(req, res) {
   var parts = path.split('/');
   if (parts[parts.length-1].charAt(0) === '.')
     return self.sendForbidden_(req, res, path);
+  if ('./es/_all/puppet-apply/_search' == path)
+    path = './test_data/reports_latest.json';
+
   fs.stat(path, function(err, stat) {
     if (err)
       return self.sendMissing_(req, res, path);
