@@ -1,0 +1,83 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T17:07:34.993Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3f512d831cc990eaf4ac1d48abc6c14ec9b1e715 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "current_value absent, should be --- \n  latest-ideasfxapp-vip.oy.net.local: \n    realservers: \n      blue: \n        - latest-ideasfxapp-001.oy.net.local\n        - latest-ideasfxapp-002.oy.net.local\n    env: latest\n    app: ideasfx\n  latest-ideasfxproxy-vip.oy.net.local: \n    realservers: \n      blue: \n        - latest-ideasfxproxy-001.oy.net.local\n        - latest-ideasfxproxy-002.oy.net.local\n    type: proxy\n (noop)",
+            "current_value {md5}cc7a0520ff92d5b40e7124953664f7cb, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}d33089d4fa2a9d75f23ae07e0af90da3, should be {md5}187a89b55414679c364494578b960b47 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 5 events",
+            "Finished catalog run in 40.78 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 17:07:34 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1002,
+               "Changed" : 0,
+               "Out of sync" : 6,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 72.2903270691834,
+               "Exec" : 7.610723,
+               "Sshkey" : 0.090496,
+               "User" : 0.053475,
+               "Postfix virtual" : 0.000352,
+               "Cron" : 0.001853,
+               "Ssh authorized key" : 0.010235,
+               "Group" : 0.008506,
+               "Service" : 1.417855,
+               "Filebucket" : 0.000462,
+               "Notify" : 0.015864,
+               "Config retrieval" : 45.2172560691833,
+               "File" : 17.022387,
+               "Package" : 0.840863
+            },
+            "events" : {
+               "Total" : 6,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 6
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://latest-lb-001.mgmt.oy.net.local",
+      "@source_host" : "latest-lb-001.mgmt.oy.net.local",
+      "@message" : "puppet run on latest-lb-001.mgmt.oy.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "jTksu06ORbOnhvDsaiRpTQ",
+   "_type" : "puppet-apply"
+}
+

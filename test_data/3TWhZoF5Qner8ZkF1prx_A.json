@@ -1,0 +1,97 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T17:11:25.446Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}3e63460ba073cf41f0885b7da6791e3e, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3b1292a37e76b94925cf6bd634b056016d418cff to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}fc47c6b4a51d80ca3bd93eb8dfda09b6, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}f74f89119cb3fabdf5f8beee50339321, should be {md5}0420aacb592e524ab2308dd6bf83c44c (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 6 events",
+            "Finished catalog run in 45.97 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 17:11:25 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 955,
+               "Changed" : 0,
+               "Out of sync" : 6,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 61.6840390942078,
+               "Exec" : 6.286581,
+               "User" : 0.079143,
+               "Sshkey" : 0.119135,
+               "Postfix virtual" : 0.000719,
+               "Cron" : 0.00239,
+               "Ssh authorized key" : 0.015998,
+               "Group" : 0.011454,
+               "Service" : 1.244811,
+               "Notify" : 0.00228,
+               "Filebucket" : 0.000402,
+               "File" : 23.047809,
+               "Config retrieval" : 30.0427660942078,
+               "Package" : 0.830551
+            },
+            "events" : {
+               "Total" : 6,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 6
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://pg-vpn-001.mgmt.pg.net.local",
+      "@message" : "puppet run on pg-vpn-001.mgmt.pg.net.local",
+      "@source_host" : "pg-vpn-001.mgmt.pg.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "3TWhZoF5Qner8ZkF1prx_A",
+   "_type" : "puppet-apply"
+}
+

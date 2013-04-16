@@ -1,0 +1,97 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T23:49:39.209Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}a5366ab1417bee5b29ca6312e04be864, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}734a45907f2b3232018ca33c40c48f04, should be {md5}21b0c4d2bbcaab9f5e95db47f71e3680 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 09fdbe5024d92e425984339e4aab96c1e17b706a to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 6 events",
+            "Finished catalog run in 42.77 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 23:49:39 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1102,
+               "Changed" : 0,
+               "Out of sync" : 6,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 76.5252311017456,
+               "Exec" : 5.90439,
+               "Sshkey" : 0.080997,
+               "User" : 0.066764,
+               "Postfix virtual" : 0.000685,
+               "Cron" : 0.002928,
+               "Ssh authorized key" : 0.013234,
+               "Group" : 0.00951,
+               "Service" : 0.935408,
+               "Filebucket" : 0.000442,
+               "Notify" : 0.001413,
+               "Config retrieval" : 45.5210371017456,
+               "File" : 22.782553,
+               "Package" : 1.20587
+            },
+            "events" : {
+               "Total" : 6,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 6
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-timapp-003.oyldn.youdevise.com",
+      "@source_host" : "oy-timapp-003.oyldn.youdevise.com",
+      "@message" : "puppet run on oy-timapp-003.oyldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "Y48fRhW8QAqMWpEKI5J00w",
+   "_type" : "puppet-apply"
+}
+

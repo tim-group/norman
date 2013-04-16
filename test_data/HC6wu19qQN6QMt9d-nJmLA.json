@@ -1,0 +1,76 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T18:30:15.952Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}53bf4b55c9750ea64692d30a1e8d34cc, should be {md5}113ab4ae970f7185b6ce2e188d5b0876 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value notrun, should be 0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 3 events",
+            "Finished catalog run in 68.06 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 18:30:15 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1206,
+               "Changed" : 0,
+               "Out of sync" : 3,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 107.398945852173,
+               "Exec" : 7.773414,
+               "Sshkey" : 0.084512,
+               "User" : 0.064204,
+               "Postfix virtual" : 0.000697,
+               "Cron" : 0.00415,
+               "Ssh authorized key" : 0.010374,
+               "Group" : 0.011287,
+               "Service" : 3.828312,
+               "Firewall" : 0.002439,
+               "Filebucket" : 0.000384,
+               "Config retrieval" : 55.3864078521729,
+               "File" : 37.946957,
+               "Package" : 2.284965,
+               "Mount" : 0.000843
+            },
+            "events" : {
+               "Total" : 3,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 3
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-mon-001.oyldn.youdevise.com",
+      "@source_host" : "oy-mon-001.oyldn.youdevise.com",
+      "@message" : "puppet run on oy-mon-001.oyldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "HC6wu19qQN6QMt9d-nJmLA",
+   "_type" : "puppet-apply"
+}
+

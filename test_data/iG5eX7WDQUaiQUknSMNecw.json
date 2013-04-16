@@ -1,0 +1,90 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T18:29:27.077Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}3e63460ba073cf41f0885b7da6791e3e, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3b1292a37e76b94925cf6bd634b056016d418cff to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "current_value {md5}fc47c6b4a51d80ca3bd93eb8dfda09b6, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "current_value {md5}efcecd44ed23e96f4aad4ff82f85787c, should be {md5}324a56aa5ea1c6eaf680cb2fd0ffa822 (noop)",
+            "current_value {md5}467aff3ed8af4eaa3bc51216f800bf93, should be {md5}c254d65a5d50eb9ce874d441e2362070 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 5 events",
+            "Finished catalog run in 47.77 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 18:29:27 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1068,
+               "Changed" : 0,
+               "Out of sync" : 6,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 7.263494,
+               "User" : 0.047653,
+               "Service" : 1.410675,
+               "Resources" : 0.000227,
+               "Logical volume" : 0.081673,
+               "Filebucket" : 0.000396,
+               "Notify" : 0.000926,
+               "File" : 23.078151,
+               "Volume group" : 0.077851,
+               "Mount" : 0.001089,
+               "Physical volume" : 0.03972,
+               "Total" : 62.9893869097595,
+               "Sshkey" : 0.062739,
+               "Ssh authorized key" : 0.010185,
+               "Cron" : 0.001591,
+               "Postfix virtual" : 0.000437,
+               "Group" : 0.007896,
+               "Filesystem" : 0.036278,
+               "Firewall" : 0.008351,
+               "Config retrieval" : 29.2188239097595,
+               "Package" : 1.641231
+            },
+            "events" : {
+               "Total" : 6,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 6
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://pg-kvm-007.mgmt.pg.net.local",
+      "@message" : "puppet run on pg-kvm-007.mgmt.pg.net.local",
+      "@source_host" : "pg-kvm-007.mgmt.pg.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "iG5eX7WDQUaiQUknSMNecw",
+   "_type" : "puppet-apply"
+}
+

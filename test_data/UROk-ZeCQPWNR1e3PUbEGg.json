@@ -1,0 +1,79 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T23:22:06.970Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "failed",
+         "logs" : [
+            "Could not retrieve catalog from remote server: Error 400 on SERVER: Could not find class role::prod_tim_nrpe_additions for oy-quantdb-001.mgmt.oy.net.local on node oy-quantdb-001.mgmt.oy.net.local",
+            "Using cached catalog",
+            "current_value absent, should be GIT REVISION: 53a554a9cfdc0f838bb71f390dad851c65e18f51 to aef462ef375cea49dcf063451437e41a231bc371 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Could not evaluate: Could not retrieve information from environment masterbranch source(s) puppet:///modules/serial/etc/grub.d/00_header",
+            "Could not evaluate: Could not retrieve information from environment masterbranch source(s) puppet:///modules/serial/usr/sbin/grub-mkconfig",
+            "Would have triggered 'refresh' from 1 events",
+            "Finished catalog run in 100.52 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 23:22:06 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1480,
+               "Changed" : 0,
+               "Out of sync" : 1,
+               "Restarted" : 0,
+               "Failed" : 2,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 9.725291,
+               "User" : 0.283601,
+               "Database user" : 10.947343,
+               "Service" : 1.8154,
+               "Resources" : 0.000236,
+               "Notify" : 0.00125,
+               "Filebucket" : 0.00042,
+               "Database grant" : 31.745523,
+               "File" : 23.298436,
+               "Mount" : 0.002094,
+               "Total" : 84.7892981166992,
+               "Database" : 0.777111,
+               "Sshkey" : 0.08344,
+               "Ssh authorized key" : 0.018199,
+               "Postfix virtual" : 0.000578,
+               "Cron" : 0.00208,
+               "Group" : 0.010623,
+               "Firewall" : 0.025667,
+               "Config retrieval" : 4.69573211669922,
+               "Package" : 1.356274
+            },
+            "events" : {
+               "Total" : 1,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 1
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-quantdb-001.mgmt.oy.net.local",
+      "@source_host" : "oy-quantdb-001.mgmt.oy.net.local",
+      "@message" : "puppet run on oy-quantdb-001.mgmt.oy.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "UROk-ZeCQPWNR1e3PUbEGg",
+   "_type" : "puppet-apply"
+}
+

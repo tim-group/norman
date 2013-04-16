@@ -1,0 +1,84 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T18:15:56.030Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3f512d831cc990eaf4ac1d48abc6c14ec9b1e715 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "current_value {md5}cc7a0520ff92d5b40e7124953664f7cb, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "current_value {md5}96e07428a0d78613d38e9ad7308e0076, should be {md5}32437a71a0016e20f941d2a3dc36726b (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 4 events",
+            "Finished catalog run in 61.15 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 18:15:56 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1083,
+               "Changed" : 0,
+               "Out of sync" : 5,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 8.267584,
+               "User" : 0.072516,
+               "Augeas" : 0.893428,
+               "Service" : 0.863883,
+               "Resources" : 0.000193,
+               "Notify" : 0.00114,
+               "Filebucket" : 0.000483,
+               "File" : 20.837348,
+               "Total" : 77.2179039341736,
+               "Sshkey" : 0.129141,
+               "Postfix virtual" : 0.001022,
+               "Cron" : 0.002159,
+               "Ssh authorized key" : 0.018624,
+               "Group" : 0.013719,
+               "Firewall" : 0.016405,
+               "Config retrieval" : 44.7132239341736,
+               "Package" : 1.387035
+            },
+            "events" : {
+               "Total" : 5,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 5
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-abacus-001.mgmt.oy.net.local",
+      "@source_host" : "oy-abacus-001.mgmt.oy.net.local",
+      "@message" : "puppet run on oy-abacus-001.mgmt.oy.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "ZYuQWBwQTzW-lVWBdktiPw",
+   "_type" : "puppet-apply"
+}
+

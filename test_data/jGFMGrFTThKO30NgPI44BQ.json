@@ -1,0 +1,81 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T18:39:32.493Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}24442cde5e81bee8f67462a8590f68c4, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 19cdc47d2d4385c509414958aaa4ba093c0aa617 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "current_value {md5}70f351d459f9a2eeab8febc895a595b2, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "current_value absent, should be deploying ideasfx on group blue in env production (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 3 events",
+            "Finished catalog run in 55.28 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 18:39:32 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1028,
+               "Changed" : 0,
+               "Out of sync" : 5,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 8.006763,
+               "User" : 0.053762,
+               "Augeas" : 0.318222,
+               "Service" : 1.288722,
+               "Resources" : 0.000227,
+               "Filebucket" : 0.00042,
+               "Notify" : 0.008191,
+               "File" : 17.547757,
+               "Total" : 59.5137189292755,
+               "Sshkey" : 0.069843,
+               "Ssh authorized key" : 0.009374,
+               "Postfix virtual" : 0.000751,
+               "Cron" : 0.001493,
+               "Group" : 0.010324,
+               "Firewall" : 0.012295,
+               "Config retrieval" : 29.1521599292755,
+               "Package" : 3.033415
+            },
+            "events" : {
+               "Total" : 5,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 5
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://production-ideasfxapp-001.mgmt.pg.net.local",
+      "@message" : "puppet run on production-ideasfxapp-001.mgmt.pg.net.local",
+      "@source_host" : "production-ideasfxapp-001.mgmt.pg.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "jGFMGrFTThKO30NgPI44BQ",
+   "_type" : "puppet-apply"
+}
+

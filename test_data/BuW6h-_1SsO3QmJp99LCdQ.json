@@ -1,0 +1,106 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T23:19:05.603Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value file, should be absent (noop)",
+            "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3f512d831cc990eaf4ac1d48abc6c14ec9b1e715 to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}cc7a0520ff92d5b40e7124953664f7cb, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}4ab691512cb74515334301ff69bdc1ff, should be {md5}d245bcc5bf1c44e1e73be4b91ec121b7 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 8 events",
+            "Finished catalog run in 61.98 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 23:19:05 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1133,
+               "Changed" : 0,
+               "Out of sync" : 7,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 7.117213,
+               "User" : 0.071737,
+               "Database user" : 4.334458,
+               "Service" : 2.053147,
+               "Resources" : 0.000223,
+               "Notify" : 0.001835,
+               "Filebucket" : 0.000375,
+               "Database grant" : 1.366241,
+               "File" : 32.100382,
+               "Total" : 100.139668896698,
+               "Database" : 0.060367,
+               "Sshkey" : 0.255933,
+               "Postfix virtual" : 0.000903,
+               "Cron" : 0.003006,
+               "Ssh authorized key" : 0.018657,
+               "Group" : 0.009482,
+               "Firewall" : 0.014012,
+               "Config retrieval" : 51.858069896698,
+               "Package" : 0.873628
+            },
+            "events" : {
+               "Total" : 7,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 7
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-frdb-002.mgmt.oy.net.local",
+      "@source_host" : "oy-frdb-002.mgmt.oy.net.local",
+      "@message" : "puppet run on oy-frdb-002.mgmt.oy.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "BuW6h-_1SsO3QmJp99LCdQ",
+   "_type" : "puppet-apply"
+}
+

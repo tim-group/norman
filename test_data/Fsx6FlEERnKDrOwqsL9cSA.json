@@ -1,0 +1,72 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T22:18:52.801Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value notrun, should be 0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Finished catalog run in 119.23 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 22:18:52 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1250,
+               "Changed" : 0,
+               "Out of sync" : 1,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 137.297607852905,
+               "Exec" : 9.615937,
+               "User" : 0.087829,
+               "Sshkey" : 0.084161,
+               "Postfix virtual" : 0.000579,
+               "Cron" : 0.004003,
+               "Ssh authorized key" : 0.013017,
+               "Group" : 0.019449,
+               "Service" : 4.416779,
+               "Firewall" : 0.002799,
+               "Filebucket" : 0.000441,
+               "File" : 81.58227,
+               "Config retrieval" : 37.9056148529053,
+               "Package" : 3.563719,
+               "Mount" : 0.00101
+            },
+            "events" : {
+               "Total" : 1,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 1
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://pg-mon-001.pgldn.youdevise.com",
+      "@message" : "puppet run on pg-mon-001.pgldn.youdevise.com",
+      "@source_host" : "pg-mon-001.pgldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "Fsx6FlEERnKDrOwqsL9cSA",
+   "_type" : "puppet-apply"
+}
+

@@ -1,0 +1,60 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T22:42:08.861Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "Could not retrieve catalog from remote server: Error 400 on SERVER: DNS result has no information for pro-refapp-vip.pg.net.local at /etc/puppet/environments/masterbranch/modules/role/manifests/http_app.pp:3 on node pro-refapp-002.mgmt.pg.net.local",
+            "Using cached catalog",
+            "Finished catalog run in 0.59 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 22:42:08 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 12,
+               "Changed" : 0,
+               "Out of sync" : 0,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 0.251775118515015,
+               "Exec" : 0.000282,
+               "Resources" : 0.000132,
+               "Filebucket" : 0.000284,
+               "File" : 0.0831820000000001,
+               "Config retrieval" : 0.167503118515015,
+               "Package" : 0.000392
+            },
+            "events" : {
+               "Total" : 0,
+               "Failure" : 0,
+               "Success" : 0
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://pro-refapp-002.mgmt.pg.net.local",
+      "@message" : "puppet run on pro-refapp-002.mgmt.pg.net.local",
+      "@source_host" : "pro-refapp-002.mgmt.pg.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "2aqsOgmnQXeibypOdmRong",
+   "_type" : "puppet-apply"
+}
+

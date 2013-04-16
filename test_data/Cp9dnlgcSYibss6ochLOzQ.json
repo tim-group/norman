@@ -1,0 +1,75 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T19:55:45.606Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "failed",
+         "logs" : [
+            "Could not retrieve catalog from remote server: Error 400 on SERVER: DNS result has no information for pro-refapp-vip.pg.net.local at /etc/puppet/environments/masterbranch/modules/role/manifests/http_app.pp:3 on node pro-refapp-001.mgmt.pg.net.local",
+            "Using cached catalog",
+            "Could not evaluate: Could not retrieve information from environment masterbranch source(s) puppet:///modules/serial/etc/grub.d/00_header",
+            "Could not evaluate: Could not retrieve information from environment masterbranch source(s) puppet:///modules/serial/usr/sbin/grub-mkconfig",
+            "current_value absent, should be GIT REVISION: 6ab27be2af86731d6e5069aa34d66cb8fd7b88d9 to 1e45402ce731a22eaa9d3fbcac03a0a1cf248b3c (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Finished catalog run in 31.15 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 19:55:45 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 881,
+               "Changed" : 0,
+               "Out of sync" : 1,
+               "Restarted" : 0,
+               "Failed" : 2,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 24.0461640272522,
+               "Exec" : 4.537752,
+               "Sshkey" : 0.07091,
+               "User" : 0.044023,
+               "Ssh authorized key" : 0.008102,
+               "Cron" : 0.00149,
+               "Postfix virtual" : 0.000593,
+               "Group" : 0.007403,
+               "Service" : 1.497208,
+               "Resources" : 0.000274,
+               "Firewall" : 0.008224,
+               "Filebucket" : 0.000428,
+               "Notify" : 0.003794,
+               "Config retrieval" : 2.5981240272522,
+               "File" : 14.14976,
+               "Package" : 1.118079
+            },
+            "events" : {
+               "Total" : 1,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 1
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://pro-refapp-001.mgmt.pg.net.local",
+      "@message" : "puppet run on pro-refapp-001.mgmt.pg.net.local",
+      "@source_host" : "pro-refapp-001.mgmt.pg.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "Cp9dnlgcSYibss6ochLOzQ",
+   "_type" : "puppet-apply"
+}
+

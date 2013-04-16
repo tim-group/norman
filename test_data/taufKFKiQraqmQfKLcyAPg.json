@@ -1,0 +1,71 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T19:45:30.222Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value absent, should be GIT REVISION: c29a0a4b579449d0dde546594c2ad8c2b47479fc to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "current_value {md5}9285660d97aa2d4f0fa42dee91818048, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Finished catalog run in 58.39 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 19:45:30 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1021,
+               "Changed" : 0,
+               "Out of sync" : 3,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 69.2131950889588,
+               "Exec" : 6.627422,
+               "User" : 0.051481,
+               "Sshkey" : 0.087748,
+               "Postfix virtual" : 0.000646,
+               "Cron" : 0.001638,
+               "Ssh authorized key" : 0.011684,
+               "Group" : 0.010208,
+               "Service" : 1.26636,
+               "Notify" : 0.001165,
+               "Filebucket" : 0.000406,
+               "File" : 36.112541,
+               "Config retrieval" : 24.0795950889587,
+               "Package" : 0.962301
+            },
+            "events" : {
+               "Total" : 3,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 3
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://adriatic.pgldn.youdevise.com",
+      "@message" : "puppet run on adriatic.pgldn.youdevise.com",
+      "@source_host" : "adriatic.pgldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "taufKFKiQraqmQfKLcyAPg",
+   "_type" : "puppet-apply"
+}
+

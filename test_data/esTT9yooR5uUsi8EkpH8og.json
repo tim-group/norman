@@ -1,0 +1,96 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T18:15:09.107Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value present, should be absent (noop)",
+            "current_value present, should be absent (noop)",
+            "current_value present, should be absent (noop)",
+            "current_value {md5}a5366ab1417bee5b29ca6312e04be864, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "current_value present, should be absent (noop)",
+            "current_value present, should be absent (noop)",
+            "current_value absent, should be present (noop)",
+            "current_value absent, should be present (noop)",
+            "current_value absent, should be present (noop)",
+            "current_value absent, should be present (noop)",
+            "current_value absent, should be present (noop)",
+            "current_value {md5}139decaaf574862f6c536dc5c607c5ab, should be {md5}7cea539222cee56a10aad3b4fd25184f (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 09fdbe5024d92e425984339e4aab96c1e17b706a to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "current_value present, should be absent (noop)",
+            "current_value absent, should be present (noop)",
+            "Would have triggered 'refresh' from 6 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 5 events",
+            "Finished catalog run in 85.67 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 18:15:09 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1601,
+               "Changed" : 0,
+               "Out of sync" : 17,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 137.932085055191,
+               "Exec" : 16.084489,
+               "Sshkey" : 0.145818,
+               "User" : 0.062521,
+               "Postfix virtual" : 0.000523,
+               "Cron" : 0.001947,
+               "Ssh authorized key" : 0.014914,
+               "Group" : 0.012082,
+               "Service" : 1.584948,
+               "Resources" : 0.000348,
+               "Firewall" : 8.03279000000001,
+               "Filebucket" : 0.000611,
+               "Notify" : 0.003293,
+               "Config retrieval" : 84.994528055191,
+               "File" : 25.500806,
+               "Package" : 1.492467
+            },
+            "events" : {
+               "Total" : 17,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 17
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://oy-router-001.mgmt.oy.net.local",
+      "@source_host" : "oy-router-001.mgmt.oy.net.local",
+      "@message" : "puppet run on oy-router-001.mgmt.oy.net.local",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "esTT9yooR5uUsi8EkpH8og",
+   "_type" : "puppet-apply"
+}
+

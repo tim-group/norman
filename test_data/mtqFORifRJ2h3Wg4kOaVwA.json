@@ -1,0 +1,99 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T16:42:34.694Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "current_value {md5}3e63460ba073cf41f0885b7da6791e3e, should be {md5}148f99e4bad5d3ffd006f8cde1ce6ba0 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value 5.2.1+youdevise1, should be 5.2.1+youdevise3 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 3b1292a37e76b94925cf6bd634b056016d418cff to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}fc47c6b4a51d80ca3bd93eb8dfda09b6, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}cb44bc2599eae8197ce9b5f9f7a3b919, should be {md5}c8f1fe68a96940e4f00aae5ee952d6dc (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value stopped, should be running (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 7 events",
+            "Finished catalog run in 56.14 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 16:42:33 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1021,
+               "Changed" : 0,
+               "Out of sync" : 7,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Failed to restart" : 0,
+               "Scheduled" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Total" : 71.0010371675567,
+               "Exec" : 5.351341,
+               "User" : 0.044525,
+               "Sshkey" : 0.094782,
+               "Postfix virtual" : 0.00074,
+               "Cron" : 0.001591,
+               "Ssh authorized key" : 0.009544,
+               "Group" : 0.008795,
+               "Service" : 1.128081,
+               "Notify" : 0.001118,
+               "Filebucket" : 0.000411,
+               "File" : 36.073361,
+               "Config retrieval" : 27.4737541675568,
+               "Package" : 0.812994
+            },
+            "events" : {
+               "Total" : 7,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 7
+            }
+         },
+         "@location" : "pg"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://greece.pgldn.youdevise.com",
+      "@message" : "puppet run on greece.pgldn.youdevise.com",
+      "@source_host" : "greece.pgldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.407523,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "mtqFORifRJ2h3Wg4kOaVwA",
+   "_type" : "puppet-apply"
+}
+

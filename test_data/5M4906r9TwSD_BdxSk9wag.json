@@ -1,0 +1,86 @@
+{
+   "_source" : {
+      "@timestamp" : "2013-03-29T15:26:55.788Z",
+      "@tags" : [
+         "puppet-apply"
+      ],
+      "@fields" : {
+         "report_format" : 3,
+         "status" : "unchanged",
+         "logs" : [
+            "content changed '{md5}00495d7a02bbcd6572f23d84fb52d469' to '{md5}bf3f9b489b0273fecd25a3dd49ac2da6'",
+            "current_value {md5}8af574d9cf8c0559485c4e0ebc6f07ea, should be {md5}4ec817f4b334838de076999e2c170c27 (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value {md5}a5366ab1417bee5b29ca6312e04be864, should be {md5}7bef4b2a6c0f419b6ff5983a366adea3 (noop)",
+            "current_value {md5}1cb2213388f635d5ebb4bb963a1c6177, should be {md5}e6eb03c3d8473a1dd6c472f1b673368d (noop)",
+            "Would have triggered 'refresh' from 1 events",
+            "current_value absent, should be GIT REVISION: 09fdbe5024d92e425984339e4aab96c1e17b706a to d28ce90901f7af21e3661f6244c3b7fcea569d33 (noop)",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 2 events",
+            "Would have triggered 'refresh' from 1 events",
+            "Would have triggered 'refresh' from 4 events",
+            "Finished catalog run in 102.65 seconds"
+         ],
+         "environment" : "masterbranch",
+         "puppet_version" : "3.1.0",
+         "end_time" : "Fri Mar 29 15:26:55 +0000 2013",
+         "metrics" : {
+            "resources" : {
+               "Total" : 1279,
+               "Changed" : 0,
+               "Out of sync" : 5,
+               "Restarted" : 0,
+               "Failed" : 0,
+               "Skipped" : 6,
+               "Scheduled" : 0,
+               "Failed to restart" : 0
+            },
+            "changes" : {
+               "Total" : 0
+            },
+            "time" : {
+               "Exec" : 10.697607,
+               "User" : 0.265747,
+               "Database user" : 16.131031,
+               "Service" : 1.812279,
+               "Notify" : 0.002283,
+               "Filebucket" : 0.000879,
+               "File" : 23.883852,
+               "Database grant" : 19.40349,
+               "Total" : 135.911876972733,
+               "Database" : 1.245467,
+               "Nagios command" : 0.001467,
+               "Sshkey" : 0.126599,
+               "Postfix virtual" : 0.001589,
+               "Cron" : 0.005731,
+               "Ssh authorized key" : 0.029411,
+               "Group" : 0.022775,
+               "Config retrieval" : 58.9584419727325,
+               "Package" : 3.323228
+            },
+            "events" : {
+               "Total" : 5,
+               "Failure" : 0,
+               "Success" : 0,
+               "Noop" : 5
+            }
+         },
+         "@location" : "oy"
+      },
+      "@source_path" : "/etc/puppet/environments/masterbranch/modules/puppetmaster/lib/puppet/reports/logstash.rb",
+      "@source" : "puppet://dominica.oyldn.youdevise.com",
+      "@source_host" : "dominica.oyldn.youdevise.com",
+      "@message" : "puppet run on dominica.oyldn.youdevise.com",
+      "@type" : "puppet-apply"
+   },
+   "_score" : 10.3881,
+   "_index" : "logstash-2013.03.29",
+   "_id" : "5M4906r9TwSD_BdxSk9wag",
+   "_type" : "puppet-apply"
+}
+
