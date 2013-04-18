@@ -11,18 +11,8 @@ function cleanData(data) {
   return out;
 }
 
-// Sniff if we're being run as an elasticsearch plugin
-function elasticsearch_url() {
-  var location = window.location;
-  if (/_plugin/.test(location.href.toString())) {
-    var trimmed = /.*\/_plugin\//.exec(location.href.toString());
-    return trimmed[0].replace("/_plugin/", "/");
-  }
-  return "/es"
-}
-
-function ReportListCtrl($scope, $http, Phone) {
-  $http.post(elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
+function ReportListCtrl($scope, $http, ESHelpers) {
+  $http.post(ESHelpers.elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
    "from" : 0, "size" : 100,
    "query": {
       "term": {
@@ -44,16 +34,16 @@ function ReportListCtrl($scope, $http, Phone) {
   $scope.orderProp = '-timestamp';
 }
 
-//ReportListCtrl.$inject = ['$scope', '$http', 'Phone'];
+//ReportListCtrl.$inject = ['$scope', '$http', 'ESHelpers'];
 
-function ReportDetailCtrl($scope, $routeParams, $http) {
+function ReportDetailCtrl($scope, $routeParams, $http, ESHelpers) {
   $scope.uuid = $routeParams.uuid;
-  $http.get(elasticsearch_url() + '/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
+  $http.get(ESHelpers.elasticsearch_url() + '/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
     $scope.report = addContextTo(cleanData(data["_source"]));
   });
 }
 
-//ReportDetailCtrl.$inject = ['$scope', '$routeParams', '$http'];
+//ReportDetailCtrl.$inject = ['$scope', '$routeParams', '$http', 'ESHelpers'];
 
 function addContextTo(data) {
   data.iconFailures = "icon-ok";
