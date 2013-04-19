@@ -54,6 +54,7 @@ describe('Norman controllers', function() {
   describe('ReportListCtrl', function(){
     var scope, ctrl, $httpBackend;
 
+    beforeEach(module('norman'));
     beforeEach(module('normanServices'));
 
     beforeEach(inject(function(_$httpBackend_, $rootScope, $controller) {
@@ -61,7 +62,7 @@ describe('Norman controllers', function() {
       $httpBackend.expectPOST('/es/_all/puppet-apply/_search', {"from":0,"size":100,"query":{"term":{"@tags":"puppet-apply"}},"sort":[{"@timestamp":{"order":"desc"}}]}).respond(200, {'hits':{'hits': all_reports}});
 
       scope = $rootScope.$new();
-      ctrl = $controller(ReportListCtrl, {$scope: scope});
+      ctrl = $controller('ReportListCtrl', {$scope: scope});
     }));
 
     afterEach(function() {
@@ -89,6 +90,7 @@ describe('Norman controllers', function() {
 
       var report = all_reports[0]
 
+      beforeEach(module('norman'));
       beforeEach(module('normanServices'));
 
       beforeEach(inject(function(_$httpBackend_, $rootScope, $routeParams, $controller) {
@@ -100,7 +102,7 @@ describe('Norman controllers', function() {
         $routeParams.index = 'logstash-2013.03.13';
 
         scope = $rootScope.$new();
-        ctrl = $controller(ReportDetailCtrl, {$scope: scope});
+        ctrl = $controller('ReportDetailCtrl', {$scope: scope});
       }));
 
       afterEach(function() {
