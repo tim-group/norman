@@ -2,15 +2,6 @@
 
 /* Controllers */
 
-function cleanData(data) {
-  var out = {};
-  for (var key in data) {
-    var newKey = key.replace(/@/g, "");
-    out[newKey] = data[key];
-  }
-  return out;
-}
-
 function ReportListCtrl($scope, $http, ESHelpers) {
   $http.post(ESHelpers.elasticsearch_url() + '/_all/puppet-apply/_search', angular.toJson({
    "from" : 0, "size" : 100,
@@ -26,7 +17,7 @@ function ReportListCtrl($scope, $http, ESHelpers) {
     var d = []
     data['hits']['hits'].forEach(function(hit) {
         hit["_source"]["uuid"] = hit["_index"].concat("/").concat(hit["_id"]);
-        d.push(addContextTo(cleanData(hit["_source"])));
+        d.push(ESHelpers.addContextTo(ESHelpers.cleanData(hit["_source"])));
     })
     $scope.reports = d;
   });
@@ -39,30 +30,9 @@ function ReportListCtrl($scope, $http, ESHelpers) {
 function ReportDetailCtrl($scope, $routeParams, $http, ESHelpers) {
   $scope.uuid = $routeParams.uuid;
   $http.get(ESHelpers.elasticsearch_url() + '/' + $routeParams.index + '/puppet-apply/' + $routeParams.uuid).success(function(data) {
-    $scope.report = addContextTo(cleanData(data["_source"]));
+    $scope.report = ESHelpers.addContextTo(ESHelpers.cleanData(data["_source"]));
   });
 }
 
 //ReportDetailCtrl.$inject = ['$scope', '$routeParams', '$http', 'ESHelpers'];
-
-function addContextTo(data) {
-  data.iconFailures = "icon-ok";
-  data.iconChanges = "icon-minus";
-  if (data.fields.metrics.resources) {
-    if (data.fields.metrics.resources.Failed > 0) {
-      data.hadFailures = "hadFailures";
-      data.iconFailures = "icon-remove";
-    }
-    if (!data.fields.metrics.events.Noop || data.fields.metrics.events.Noop < 1) {
-      data.hadChanges = "hadChanges";
-      data.iconChanges = "icon-exclamation-sign";
-    }
-  }
-  else {
-    data.hadFailures = "hadFailures";
-    data.iconFailures = "icon-remove";
-    data.iconChanges = "icon-exclamation-sign";
-  }
-  return data;
-}
 
