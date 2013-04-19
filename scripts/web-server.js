@@ -96,6 +96,11 @@ StaticServlet.prototype.handleRequest = function(req, res) {
     return self.sendForbidden_(req, res, path);
   if ('./es/_all/puppet-apply/_search' == path)
     path = './test_data/reports_latest.json';
+  var pattern=/\.\/es\/logstash-\d+\.\d+\.\d+\/puppet-apply\/(.+)/;
+  if (pattern.test(path)) {
+    var parts = path.split('/');
+    path = './test_data/' + parts[4] + '.json';
+  }
 
   fs.stat(path, function(err, stat) {
     if (err)
