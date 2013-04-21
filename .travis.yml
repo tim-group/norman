@@ -1,4 +1,5 @@
 language: node_js
 node_js:
   - 0.8
-
+#after_success:
+#  - git commit -a -m "Committed by Travis-CI build number: $TRAVIS_JOB_ID"
