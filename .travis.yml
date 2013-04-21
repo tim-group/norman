@@ -2,5 +2,5 @@ language: node_js
 node_js:
   - 0.8
 after_success:
-   - sh -c 'cd /home/travis/build/youdevise/norman/; ls ; ./script/package.sh'
+   - sh -c 'cd /home/travis/build/youdevise/norman/; ./scripts/package.sh'
 #  - git commit -a -m "Committed by Travis-CI build number: $TRAVIS_JOB_ID"
