@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "./node_modules/.bin/testacular start --single-run --browsers PhantomJS config/testacular.conf.js",
-    "posttest": "./scripts/web-server.js &\nexport PID=$!\n./node_modules/.bin/testacular start --single-run --browsers PhantomJS config/testacular-e2e.conf.js\nexport STAT=$?\nkill -15 $PID\nexit $STAT"
+    "test": "./node_modules/.bin/testacular start --single-run --browsers PhantomJS config/testacular.conf.js || exit $!\n./scripts/web-server.js &\nexport PID=$!\n./node_modules/.bin/testacular start --single-run --browsers PhantomJS config/testacular-e2e.conf.js\nexport STAT=$?\nkill -15 $PID\nexit $STAT",
+    "posttest": "/bin/true"
   },
   "repository": {
     "type": "git",
