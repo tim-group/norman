@@ -1,16 +1,20 @@
-<div class="details">
-  <h2>Details for {{report.source_host}} @ {{report.timestamp | date:'short'}}</h2>
-<br/>
-<table class="table table-bordered table-condensed">
+<h2>Details for {{report.source_host}} @ {{report.timestamp | date:'short'}}</h2>
+<div class="row">
+<div class="span4">
+<table class="table table-condensed">
   <tr><th>Status</th><td>{{report.fields.status}}</td></tr>
-  <tr><th>Source</th><td>{{report.source}}</td></tr>
+  <tr><th>Hostname</th><td>{{report.source_host}}</td></tr>
   <tr><th>Environment</th><td>{{report.fields.environment}}</td></tr>
 
-</table>  
+</table>
+</div>
+</div>
 
+<div class="row">
+<div class="span5">
 <table class="table table-bordered table-condensed">
-  
-  <tr><th colspan=2>Metrics</th></tr>  
+
+  <tr><th colspan=2>Metrics</th></tr>
   <tr ng-repeat="(name, metricDetails) in report.fields.metrics">
     <td>{{ name }}</td>
     <td>
@@ -20,12 +24,16 @@
     </td>
   </tr>
 
-</table>  
-<table class="table table-bordered table-condensed">
-  
-  <tr><th colspan=2>Lines</th></tr>  
-  <tr><td colspan="2">
-    <span ng-repeat="line in report.fields.logs">{{ line }}<br/><span>
-  </td></tr>
 </table>
 </div>
+</div>
+
+
+<h2>Lines</h2>
+<div class="span5">
+    <div ng-repeat="line in report.fields.logs">
+     <div class="row"><div class="span10">{{ line }}</div></div>
+    </div>
+
+</div>
+
