@@ -15,14 +15,19 @@
     </div>
     <div class="span10">
       <!--Body content-->
-      <ul class="runs">
-        <li ng-repeat="report in reports | filter:query | orderBy:orderProp" class="thumbnail {{report.hadChanges}} {{report.hadFailures}}">          
-          <i class="{{report.iconFailures}}"> </i>
-          <i class="{{report.iconChanges}}"> </i>
-           <a href="#/report/{{report.uuid}}">{{report.source}}</a> @ {{report.timestamp | date: 'medium' }}
-        </li>
-      </ul>
-
+      <table class=".table">
+        <tr><th>Failed</th>
+            <th>Changed?</th>
+            <th>Hostname</th>
+            <th>Date</th>
+        </tr>
+        <tr ng-repeat="report in reports | filter:query | orderBy:orderProp">
+          <td><i class="{{report.iconFailures}}"> </i></td>
+          <td><i class="{{report.iconChanges}}"> </i></td>
+           <td><a href="#/report/{{report.uuid}}">{{report.source_host}}</a></td>
+            <td> {{report.timestamp | iso8601ago }}</td>
+        </tr>
+      </table>
     </div>
   </div>
 </div>

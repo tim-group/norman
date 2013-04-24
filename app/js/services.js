@@ -16,16 +16,13 @@ angular.module('normanServices', []).
         data.iconChanges = "icon-minus";
         if (data.fields.metrics.resources) {
           if (data.fields.metrics.resources.Failed > 0) {
-            data.hadFailures = "hadFailures";
             data.iconFailures = "icon-remove";
           }
           if (!data.fields.metrics.events.Noop || data.fields.metrics.events.Noop < 1) {
-            data.hadChanges = "hadChanges";
             data.iconChanges = "icon-exclamation-sign";
           }
         }
         else {
-          data.hadFailures = "hadFailures";
           data.iconFailures = "icon-remove";
           data.iconChanges = "icon-exclamation-sign";
         }

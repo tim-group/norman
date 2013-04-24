@@ -2,7 +2,7 @@
 
 /* App Module */
 
-window.norman = angular.module('norman', ['normanServices']).
+window.norman = angular.module('norman', ['normanServices', 'normanFilters']).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
       when('/latest', {templateUrl: 'partials/report-latest.html',   controller: 'ReportListCtrl'}).
