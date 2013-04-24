@@ -94,6 +94,16 @@ StaticServlet.prototype.handleRequest = function(req, res) {
   var parts = path.split('/');
   if (parts[parts.length-1].charAt(0) === '.')
     return self.sendForbidden_(req, res, path);
+  util.puts(path);
+  if ('./' == path ) {
+    res.writeHead(302, {
+      'Location': '/app/index.html',
+      'Content-Length': '0'
+    });
+    res.write('');
+    res.end();
+    return;
+  }
   if ('./es/_all/puppet-apply/_search' == path)
     path = './test_data/reports_latest.json';
   var pattern=/\.\/es\/logstash-\d+\.\d+\.\d+\/puppet-apply\/(.+)/;

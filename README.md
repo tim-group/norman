@@ -38,7 +38,14 @@ Just build a .zip file of the
 
 ![Details](detail.png)
 
-# TODO
+# Developing
+
+You'll need node.js, but you should be able to easily run the development server:
+
+    spaceinvaders norman [master]$ ./scripts/web-server.js
+    Http Server running at http://localhost:8000/
+
+# TO`DO
 
   * Add an 'other runs for this host' page
   * Fix search / ordering functionality on homepage
