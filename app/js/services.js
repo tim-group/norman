@@ -7,7 +7,7 @@ angular.module('normanServices', []).
         var location = window.location;
         if (/_plugin/.test(location.href.toString())) {
           var trimmed = /.*\/_plugin\//.exec(location.href.toString());
-          return trimmed[0].replace("/_plugin/", "/");
+          return trimmed[0].replace("/_plugin/", "");
         }
         return "/es"
       };
