@@ -6,6 +6,10 @@ if [ "nothing to commit, working directory clean" != "$stat" ]; then
     echo "Unclean - please commit before package.sh";
     exit 2;
 fi
+rm gh-pages/releases/latest.zip
+pushd gh-pages/releases/
+ln -s $packagefn latest.zip
+popd
 git read-tree --prefix=gh-pages/ -u gh-pages
 cp -r "$packagefn" gh-pages/releases
 git add -f gh-pages
