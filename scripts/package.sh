@@ -2,7 +2,7 @@
 
 packagefn=$(scripts/build_zip.sh)
 stat=$(git status 2> /dev/null | tail -n1)
-if [ "nothing to commit (working directory clean)" != "$stat" ]; then
+if [ "nothing to commit, working directory clean" != "$stat" ]; then
     echo "Unclean - please commit before package.sh";
     exit 2;
 fi
